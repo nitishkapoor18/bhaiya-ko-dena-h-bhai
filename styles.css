@@ -1,0 +1,1562 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1920;
+    padding: 0 80px;
+    margin: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+/* navbar styling */
+nav .max-width{
+    width: 1in;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #252122;
+    width: 100%;
+    z-index: 999;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size: 1.2rem;
+    position: fixed;
+    font-weight: 600;
+}
+nav .max-width ul{
+    display: flex;
+    align-items: center;
+}
+nav .max-width ul li{
+    list-style: none;
+    margin-left: 40px;
+}
+nav .max-width ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+nav .max-width ul li a:hover{
+    color: #9518fc;
+}
+nav .max-width button{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+/* menu button styling */
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* uff landing page styling */
+
+.uff{
+    background: url(images/BG/1.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1% 1%;
+}
+.uff_content h2{
+    font-size: 3.5rem;
+    color: #000;
+    font-weight: 600;
+}
+.uff_content h1{
+    font-size: 3.75rem;
+    color: #9114ff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.uff_content span{
+    color: #575757;
+}
+.anim-text-banner{
+    margin-top: 25px;
+}
+.anim-text{
+    color: #575757;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.typing{
+    color: #9114ff;
+}
+
+/*Feature Section*/
+
+.feature {
+    background: url(images/BG/9.png);
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    padding: 7% 1% 5% 1%;
+}
+/* .solutions{
+    background: url(images/BG/3.png) !important;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    padding: 7% 1% 5% 1%;
+} */
+.feature_box1 {
+    width: 95%;
+    /* margin-right: auto; */
+    display: flex;
+}
+.feature_box1 div {
+    width: 430px !important;
+}
+.feature_box1 div img {
+    width: 458px;
+}
+.feature_box1 div h3 {
+    width: 290px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 19%;
+}
+.feature h1 {
+    font-size: 2.6rem;
+    margin: 0 0 50px 120px;
+}
+
+/* notify section styling */
+.notify{
+    background: url(images/BG/4.png);
+    background-size: 100% 100%;
+    height: 100%;
+    padding: 4% 0;
+}
+.notify_content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+}
+.notify_content h1{
+    font-size: 3rem;
+    max-width: 600px;
+    font-weight: 600;
+    margin-top: 16%;
+}
+.indiaImg .india{
+    width: 8%;
+    height: auto;
+    margin-left: 90%;
+    margin-top: 5%;
+}
+
+.notify_png{
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+
+
+
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+   
+  .popup .content {
+    position:absolute;
+    top:400%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:95%;
+    max-width:500px;
+    height:400px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    
+  }
+   
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+   
+
+  form .data label{
+    font-size: 18px;
+    text-align: left;
+    margin-left: -45%;
+  }
+  form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+  }
+  form .data input:focus{
+    border-color: #3498db;
+    border-bottom-width: 2px;
+  }
+  form .forgot-pass{
+    margin-top: -8px;
+  }
+  form .forgot-pass a{
+    color: #3498db;
+    text-decoration: none;
+  }
+  form .forgot-pass a:hover{
+    text-decoration: underline;
+  }
+  form .btn{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    transition: all 0.4s;
+  }
+  form .btn:hover .inner{
+    left: 0;
+  }
+  form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  form .signup-link{
+    text-align: center;
+  }
+  form .signup-link a{
+    color: #3498db;
+    text-decoration: none;
+  }
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
+
+  .content form .data{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+  }
+   
+
+/* about us section */
+
+.main1 {
+    background: url(images/BG/5.png);
+    height: 110vh;
+    background-size: 100% 100%;
+}
+.main__content1 {
+    color: black;
+    padding-top: 5%;
+    line-height: 40px;
+}
+.main__content1 h1 {
+    font-size: 3rem;
+    margin-bottom: 32px;
+}
+.main__content1 h2 {
+    font-size: 2rem;
+    color: #9114ff;
+    font-weight: 600;
+}
+.main__content1 p {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.main__content1 span {
+    color: black;
+    font-weight: 700;
+}
+
+/* become partner and join our team styling */
+.become_partner, .join_team {
+    position: relative;
+    background-image: url(images/BG/6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    width: 100%;
+    padding-top:10%;
+    height: 110vh;
+    overflow: hidden;
+}
+.join_team{
+    background-image: url(images/BG/7.png);
+
+}
+.become_partner div, .join_team div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.become_partner .chef-img{
+    width: 768px;
+    margin-top: -30%;
+}
+
+.join_team .girl_img {
+    width: 657px;
+    margin-top: -30%;
+}
+
+ .join_team h1 {
+    font-size: 3rem;
+    margin: 10px;
+    margin-right: -10%;
+    margin-top: -30%;
+}
+ .join_team p {
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 10px;
+   max-width: 550px;
+    margin-right: -33%;
+}
+
+.join_team button {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(32, 102, 171);
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px;
+    width: 270px;
+    letter-spacing: 1px;
+    margin: 20px;
+    margin-right: 6%;
+}
+
+.become_partner h1 {
+    font-size: 3rem;
+    margin: 10px;
+    /* text-align: left; */
+    margin-right: 38%;
+    margin-top: -30%;
+}
+
+.become_partner p {
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 10px;
+    /* text-align: left; */
+    width: 500px;
+    margin-right: 33%;
+}
+
+
+.become_partner button {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(32, 102, 171);
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px;
+    width: 270px;
+    letter-spacing: 1px;
+    margin: 20px;
+    margin-right: 65%;
+}
+.become_partner button a{
+    text-decoration: none;
+    color: white;
+}
+
+.join_team button a{
+    text-decoration: none;
+    color: white;
+}
+.section__partners button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* UFF partners */
+.partner{
+    position: relative;
+    background-image: url(images/31.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.partner div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.partner .partner-img {
+    width: 500px;
+    margin-left: 40%;
+    border-radius: 20px;
+}
+ 
+
+.partner h1 {
+    font-size: 4rem;
+    margin: 10px;
+    width: 100%;
+    align-self: flex-start;
+    margin-top: 4%;
+}
+
+.partner p {
+    color: grey;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 10px;
+    width: 450px;
+    align-self: flex-start;
+}
+
+
+.partner button {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(32, 102, 171);
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 1px;
+    align-self: flex-start;
+}
+
+.section__partners{
+    margin-right: 180%;
+}
+
+/* Your growth is our priority  */
+.feature1 {
+    background-image: url(images/img.png);
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: hidden;
+}
+.feature1 h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin: 80px 0 20px 160px;
+}
+.feature_box {
+    display: flex;
+    justify-content: center;
+}
+.feature_box div {
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    margin: 80px;
+}
+.feature_box img {
+    width: 500px;
+    height: auto;
+    margin-left: -55%;
+}
+/* .feature_box div:nth-child(2) img {
+    width: 500px;
+    height:auto;
+    margin-top: -35%;
+} */
+.feature_box div h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 10px;
+    width: 350px;
+    margin-left: -25%;
+}
+/* .feature_box .mobile__img{
+    margin-top: 5.8%;
+} */
+
+/* Register as a Partner */
+
+.partner_form{
+    background: url(images/Website\ Shared\ File\ \(1\).png);
+    height: 110vh;
+    background-size: 100% 100%;
+}
+
+.form_container{
+    padding: 8% 7%;
+}
+
+.form_container h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #474747;
+}
+
+.form_container p{
+    max-width: 1000px;
+    font-weight: 500;
+    color: #838282;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.form_flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8%;
+}
+
+.form_flex img{
+    margin-top: -55px;
+    width: 370px; 
+    height: 220px;
+}
+
+form label{
+    font-weight: 500;
+    color: #838282;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: 210px;
+}
+
+form input{
+    background-color: #dedaee;
+    padding: 1%;
+    margin-bottom: 20px;
+    border: transparent;
+    border-radius: 15px;
+    outline: none;
+}
+
+
+#btn__form__part{
+    margin-left: 32%;
+    cursor: pointer;
+    width: 28%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+}
+
+.btn__form__part{
+    margin-left: 32%;
+    cursor: pointer;
+    width: 28%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+}
+/* Footer CSS */
+footer{
+    background-color: #252122;
+    color: white;
+    margin: 0% 0;
+    padding: 2%;
+}
+
+.foot{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.about p{
+    margin-top: 15px;
+    text-align: justify;
+    max-width: 400px;
+    line-height: 25px;
+}
+
+.links{
+    margin-left: 50px;
+}
+
+.links ul{
+    margin-top: 15px;
+}
+.links ul li{
+    margin-top: 8px;
+}
+
+ul li a{
+    color: white;
+}
+
+.social{
+    margin-left: 100px;
+  
+}
+
+.social img{
+    width: 350px;
+    height: 150px;
+}
+
+.social ul{
+    display: flex;
+    align-items: center;
+}
+
+.social ul li a i{
+    font-size: 26px;
+    margin-left: 40px;
+}
+
+.privacy{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* media queries */
+ 
+
+@media (max-width: 1440px) {
+   .notify_content{
+      margin-top: 10%;
+   }
+   .notify__head h1{
+       font-size: 2.8rem;
+   }
+    .main__content1{
+        padding-top: 8%;
+    }
+    .become_partner h1{
+        width: 65%;
+    }
+    .partner h1{
+       text-align: center;
+       font-size: 3.6rem;
+       margin-top: 10%;
+    }
+    .partner p{
+        margin-left: 40%;
+    }
+    .partner button{
+        margin-left: 40%;
+        width: 250px;
+    }
+    .partner .partner-img{
+        border-radius: 20px;
+    }
+    #btn__form__part {
+        margin-left: 35%;
+    }
+
+  }
+
+  @media (max-width: 1367px) {
+    .notify__head h1 {
+        font-size: 3rem;
+    }
+    .become_partner h1 {
+        width: 68%;
+    }
+    .become_partner button {
+        margin-left: -2%;
+    }
+    .partner h1 {
+       font-size: 3.1rem;
+    }
+    .partner p {
+        margin-left: 64%;
+    }
+    .partner button {
+        margin-left: 62%;
+    }
+    .feature_box img {
+        width: 418px;
+        height: auto;
+        margin-left: -32%;
+    }
+    
+    .feature_box div h3 {
+        margin-left: -22%;
+    }
+
+    .feature__content {
+        margin-left: -2%;
+    }
+
+  }
+
+
+  @media  (max-width: 1024px) {
+      .uff_content h2{
+       font-size: 2.8rem;
+      }
+      .uff_content h1{
+        font-size: 3rem;
+       }
+       .feature_box1 div{
+           width: 35% !important;
+       }
+       .feature_box1{
+           margin-left: -5%;
+       }
+       .feature_box1 div img {
+           width: 117%;
+           margin-left: 9%;
+       }
+       .notify_img{
+           width: 60%;
+           margin-top: -40%;
+           margin-left: 20%;
+       }
+       .notify__head{
+           margin-top: 5%;
+           margin-left: -65%;
+       }
+       .notify__head h1{
+           font-size: 3rem;
+       }
+     .notify_png img{
+        width: 30%;
+        height: auto;
+    }
+    .main__content1 p{
+        font-size: 1rem;
+    }
+    .become_partner .chef-img{
+     width: 100%;
+    }
+    .become_partner h1{
+        font-size: 2.1rem;
+        margin-left: -25%;
+    }
+    .become_partner p{
+        font-size: 1.5rem;
+    }
+    .feature__content {
+        margin-left: 6%;
+    }
+    .become_partner button{
+        font-size: 1.5rem;
+        width: 200px;
+        margin-right: 95%;
+    }
+      .join_team .girl_img{
+          width: 110%;
+      }
+      .join_team h1{
+          font-size: 2.4rem;
+          margin-left: -7%;
+      }
+      .join_team p{
+       font-size: 1.5rem;
+       width: 90%;
+      }
+      .join_team button{
+        font-size: 1.5rem;
+        width: 250px;
+      }
+      .partner .partner-img{
+          width: 140%;
+      }
+      .partner p{
+          font-size: 1.5rem;
+          margin-left: 90%;
+      }
+      .partner button {
+        font-size: 1.4rem;
+        width: 220px;
+        margin-left: 88%;
+      }
+      .partner h1{
+          font-size: 2.9rem;
+          margin-top: 10%;
+        margin-right: -20%;
+      }
+      .feature1 h1 {
+        font-size: 2.6rem;
+        font-weight: 800;
+        margin: 77px 0 20px 39px;
+    }
+    .feature_box div{
+        width: 15% ;
+    }
+    .feature_box1 div h3 {
+        font-size: 1.7rem;
+    }
+    .feature_box img{
+        width: 150%;
+        height: auto;
+        margin-left: -12%;
+    }
+    .feature_box div h3{
+        font-size: 1.3rem;
+        width: 250px;
+        font-weight: 500;
+    }
+    .feature_box{
+        margin-right: 10%;
+    }
+    .feature_box .mobile__img{
+        margin-top: 9%;
+    }
+    .form_container p{
+        width: 700px;
+    }
+    #btn__form__part {
+        margin-left: 49%;
+        width: 40%;
+    }
+    footer{
+        padding: 2% 0;
+    }
+    .links{
+        margin-left: 30px;
+    }
+    .social{
+        margin-left: 20px;
+    }
+    .social img{
+        width: 250px;
+        height: 100px;
+        margin-left: 50px;
+    }
+    .social ul li a i{
+        font-size: 25px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+}
+
+  
+@media (max-width: 768px) {
+    .feature_box .mobile__img {
+        margin-top: 15%;
+    }
+    nav .max-width{
+     font-size: 0.9rem;
+    }
+    .uff_content h2{
+        font-size: 2rem;
+    }
+    .uff_content h1{
+        font-size: 2.2rem;
+    }
+    .uff_container{
+        margin-top: 10%;
+    }
+    .feature_box1 div h3 {
+        width: 250px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-left: 30%;
+    }
+    .feature{
+        height: 100vh;
+    }
+    .feature_box1{
+        margin-left: -10%;
+    }
+    .notify_content h1{
+       margin-top: 30%;
+       margin-left: -10%;
+    }
+   
+    .become_partner h1{
+        font-size: 1.6rem;
+        margin-left: -13%;
+    }
+    .become_partner p{
+        font-size: 1.2rem;
+        width: 400px;
+        margin-left: 20%;
+    }
+    .become_partner button{
+        font-size: 1.3rem;
+        width: 50%;
+        margin-left: 23%;
+    }
+    .feature_box div h3{
+        font-size: 1.3rem;
+        width: 220px;
+        font-weight: 500;
+        height: auto;
+        margin-left: -30%;
+    }
+    .become_partner .chef-img{
+        width: 130%;
+    }
+   .join_team .girl_img{
+       width: 140%;
+   }
+   .join_team h1{
+       font-size: 2rem;
+       margin-left: 2%;
+   }
+   .join_team button{
+       margin-left: 20%;
+   }
+   .partner h1 {
+       font-size: 2.8rem;
+   }
+    .partner p{
+        font-size: 1.2rem;
+        width: 300px;
+        margin-left: 110%;
+    }
+    .partner .partner-img{
+        width: 180%;
+       margin-left: 20%;
+    }
+    .partner button{
+        margin-left: 105%;
+    }
+    .feature_box div h3{
+        font-size: 1rem;
+        margin-left: -72%;
+    }
+    .feature_box div{
+        width: 10% ;
+    }
+    .feature_box div img {
+        width: 240%;
+      margin-left: -30%;
+    }
+  .mobile__img img{
+      margin-top: -30%;
+  }
+  .form_container p{
+      width: 550px;
+  }
+  #btn__form__part {
+    margin-left: -2%;
+    width: 61%;
+}
+    .social img{
+        width: 330px;
+    height: 150px;
+    }
+    .feature__content {
+        margin-left: 0%;
+    }
+    .feature_box1 div img {
+        width: 117%;
+        margin-left: 49px;
+    }
+  
+
+    .about{
+        grid-area: about;
+    }
+    .links{
+        grid-area: links;
+        margin-left: 70px;
+    }
+    .social{
+        grid-area: social;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .foot{
+        grid-template-areas: 
+        "about about links"
+        "social social social";
+    }
+    .privacy{
+        margin-left: 30px;
+    }
+
+}
+
+
+
+@media (max-width: 468px) {
+
+    .popup .content {
+     top: 700%;
+    }
+
+       .uff{
+             background-size: cover;
+       }
+
+    .uff_content h2 {
+        font-size: 1.9rem;
+    }
+    .uff_content h1{
+        font-size: 3rem;
+    }
+    .uff_container{
+        margin-top: 15%;
+    }
+    .feature{
+        height: 100%;
+    }
+    .feature_box1{
+        display: block;
+    }
+    .feature h1{
+        font-size: 1.9rem;
+        margin-top: 67%;
+        margin-left: 8%;
+    }
+    .feature_box1 div img{
+        width: 350%;
+        height: auto;
+        margin-left: 7%;
+    }
+    .feature_box1 div h3{
+        font-size: 1.5rem;
+        margin-left: 90%;
+    }
+    .notify_content h1 {
+        font-size: 2rem;
+        width: 400px;
+        margin-top: 15%;
+        margin-left: 27%;
+    }
+    .notify_content img {
+        width: 130%;
+        margin-top: 0%;
+        margin-left: -10%;
+    }
+    .notify_png img{
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+    .indiaImg .india{
+        width: 30%;
+    }
+    .notify {
+        background-size: cover;
+    }
+    .main1{
+        background-size: cover;
+        height: 125%;
+    }
+    .main__content1 h1{
+       text-align: center;
+       margin-top: 40%;
+    }
+    .main__content1 p{
+        font-size: 1rem;
+        width: 300px;
+    }
+    .become_partner ,.join_team{
+        display: block;
+        background-size: cover;
+    }
+    .become_partner h1{
+        font-size: 2rem;
+        width: 400px;
+      margin-left: 180%;
+     margin-top: 10%;
+    }
+    .become_partner .chef-img{
+       margin-top: 30%;
+       width: 200%;
+       height: auto;
+       margin-left: 100%;
+    }
+    .become_partner p{
+        margin-left: 140%;
+    }
+    .become_partner button{
+      margin-left: 195%;
+      width: 300px;
+    }
+    .join_team h1{
+        width: 300px;
+        margin-left: 120%;
+        margin-top: 35%;
+    }
+    .join_team p{
+        width: 400px;
+        margin-left: 70%;
+        margin-top: 110%;
+        font-size: 1.3rem;
+    }
+    .join_team .girl_img {
+        margin-top: -333%;
+        width: 200%;
+        margin-left: 90%;
+    }
+    .join_team button{
+        width: 300px;
+        margin-left: 110%;
+        margin-top: 0%;
+    }
+    .about h3{
+        text-align: center;
+    }
+    .links{
+        margin-top: 30px;
+    }
+     .social img{
+     margin-left: -8%;
+    }
+       .foot{
+        grid-template-areas: 
+        "about about about"
+        "links links links"
+        "social social social";
+    }
+    .social ul li a i{
+        font-size: 25px;
+        margin-left: 22px;
+        margin-top: 20px;
+    }
+    .privacy{
+        margin-left: 0;
+    }
+    .partner{
+        display: block;
+        height: 120vh;
+    }
+    
+    .partner h1{
+        font-size: 2.5rem;
+        margin-top: -70%;
+    }
+    .partner .partner-img {
+        margin-top: 90%;
+        margin-left: 10%;
+    }
+    .partner p {
+        margin-top: 260%;
+        margin-left: 150%;
+        width: 400px;
+    }
+    .partner button{
+        margin-left: 190%;
+        width: 300px;
+    }
+    .feature1,.partner_form{
+        background-size: cover;
+    }
+    
+    .partner_form{
+        height: 220vh;
+        padding-top: 13%;
+    }
+    .form_flex form{
+        grid-area: form;
+    }
+    .form_flex img{
+        grid-area: image;
+        width: 300px; 
+        height: auto;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .form_flex{
+        grid-template-areas: 
+        "form form"
+        "image image";
+    }
+    .form_container h1{
+        margin-top: 30%;
+        font-size: 3rem;
+        font-weight: 700;
+        color: black;
+    }
+    .form_container p{
+        width: 350px;
+        font-size: 1.3rem;
+        
+    }
+    .feature1{
+        height: 330vh;
+    }
+    .feature_box{
+        display: block;
+        width: 150%;
+        margin-left: -7%;
+    }
+    .feature_box div img{
+        width: 741%;
+        height: auto;
+        margin-left: -117%;
+    }
+    .feature_box div h3{
+        font-size: 2rem;
+        width: 400px;
+        margin-left: -60%;
+    }
+    .feature_box .mobile__img {
+        margin-top: 23%;
+    }
+    .feature1 h1{
+        margin-top: 50%;
+    }
+    .notify_content{
+        display: block;
+    }
+    #max-width img{
+        margin-left: -25%;
+    }
+    .menu-btn i{
+     margin-left: 240%;
+    }
+}
+
+
+@media(max-width: 375px) { 
+
+    .uff_content h2 {
+        font-size: 1.8rem;
+    }
+    .uff_content h1{
+        font-size: 3rem;
+    }
+    .max-width img{
+        margin-left: -25%;
+    }
+    .menu-btn i{
+     margin-left: 240%;
+    }
+    .notify_content img{
+        width: 155%;
+        margin-top: 16%;
+    }
+
+    .notify_png img{
+        width: 60%;
+        margin-left: 2%;
+        margin-top: -1%;
+    }
+    .indiaImg .india{
+        margin-top: 30%;
+    }
+    .feature{
+        height: 100%;
+    }
+    .feature h1 {
+        font-size: 1.9rem;
+        margin-top: 37%;
+        margin-left: 8%;
+    }
+    .notify_content{
+        display: block;
+    }
+    .notify_content h1 {
+        font-size: 1.8rem;
+        width: 354px;
+        margin-top: 15%;
+        margin-left: 22%;
+    }
+    .feature_box1 div img {
+        width: 300%;
+        height: auto;
+        margin-left: 33%;
+    }
+    .become_partner p {
+        font-size: 1.2rem;
+        width: 306px;
+    }
+     .join_team p {
+         font-size: 1.2rem;
+         width: 317px;
+         margin-top: 154%;
+        
+     }
+     .become_partner h1 {
+        font-size: 2rem;
+        /* width: 400px; */
+        margin-left: 140%;
+        margin-top: 10%;
+        /* margin: 0; */
+        text-align: center;
+    }
+    .become_partner button {
+        margin: 0;
+        margin-left: 100%;
+    }
+    .social img {
+        margin-left: -20%;
+    }
+    .social{
+        margin: 0;
+    }
+    .main1{
+        height: 125%;
+    }
+    .main__content1 p {
+        font-size: 1rem;
+        width: 282px;
+        line-height: 30px;
+        margin-left: -20%;
+    }
+    .main__content1 h1{
+        font-size: 2.7rem;
+        margin-top: 70%;
+    }
+    .main__content1 h2{
+        margin-left: -20%;
+        font-size: 1.8rem;
+    }
+    .become_partner .chef-img {
+        margin-top: 30%;
+        width: 250%;
+        height: auto;
+    }
+    .join_team .girl_img {
+        margin-top: -424%;
+        width: 250%;
+        margin-left: 90%;
+    }
+    .partner p {
+        width: 350px;
+    }
+
+    .partner button{
+        margin-left: 170%;
+    }
+    .feature_box div h3 {
+        font-size: 1.5rem;
+        margin-left: -100%;
+        width: 350px;
+    }
+    .feature1 h1 {
+        margin-top: 37%;
+        margin-left: 6%;
+    }
+    .feature_box div img {
+        width: 400%;
+        margin-left: -13%;
+    }
+    .form_container p {
+        width: 321px;
+        font-size: 1.3rem;
+    }
+    .form_flex img {
+        margin-top: 10px;
+        margin-left: 10%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    .notify_content h1 {
+        font-size: 1.2rem;
+        width: 254px;
+    }
+    .social img {
+        margin-left: -19%;
+        width:150% ;
+    }
+    /* .join_team button {
+        margin: 0;
+    } */
+    .main__content1 p {
+        margin-left: -37%;
+    }
+    .main__content1 h2 {
+        margin-left: -36%;
+    }
+    .main__content1 h1 {
+        font-size: 2rem;
+    }
+
+    .uff {
+        height: 135vh;
+    }
+    
+    .feature h1 {
+        margin-top: 62%;
+    }
+
+    .feature_box1 div h3 {
+        margin-left: 58%;
+    }
+    .main1 {
+        height: 190vh;
+    }
+    .become_partner h1{
+        font-size: 1.6rem;
+    }
+
+    .become_partner p{
+        font-size: 1rem;
+    }
+
+    .join_team h1{
+        font-size: 1.6rem;
+    }
+
+    .join_team p{
+        font-size: 1rem;
+        margin-left: 76%;
+    }
+    .form_container p {
+        width: 280px;
+        font-size: 1rem;
+    }
+
+    .form_container h1 {
+        font-size: 2rem;
+        margin-top: 51%;
+    }
+    .form_flex img {
+        width: 90%;
+    }
+
+    .feature_box div h3 {
+        font-size: 1.2rem;
+        margin-left: -140%;
+        width: 200px;
+    }
+    .partner h1 {
+        font-size: 2rem;
+    }
+    .partner p {
+        width: 294px;
+        margin-left: 161%;
+    }
+    .partner button {
+        margin-left: 145%;
+    }
+    .feature1 h1 {
+        font-size: 2rem;
+        margin-top: 65%;
+    }
+    .feature_box div h3 {
+        margin-left: -3%;
+    }
+    .feature_box div img {
+        margin-left: -46%;
+    }
+    .feature_box div img {
+        margin-left: 10%;
+    }
+} 
+
+
+  
+@media(max-width:604px)
+{
+ 
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+    nav .menu{
+        position: fixed;
+        background: black;
+        left:0;
+        top:-100%;
+        width: 100%;
+        height: 40vh;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.5s ease;
+    }
+    nav .menu.active{
+        top: 0;
+    }
+    nav .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .menu li{
+       margin-top: 20px;
+    }
+}
+.emergency{
+    background-color: #252122 !important;
+}
